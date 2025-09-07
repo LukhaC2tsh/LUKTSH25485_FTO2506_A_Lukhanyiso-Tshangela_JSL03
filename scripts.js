@@ -27,7 +27,7 @@ function tasks(){
   const allTasks = [...initialTasks];
 
   //loop will continue to request new task until empty space is entered for new title task
-  for(let i = 1; i <= 2; i++){
+  for(let i = 1; i <= 3; i++){
 
     //accepts user input for variables
     taskTitle = prompt("Enter the task title.");
