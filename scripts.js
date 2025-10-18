@@ -34,7 +34,7 @@ function tasks(){
     taskDescription = prompt("Enter the description of the task.");
     taskStatus = prompt("Enter the status of the task.");
     taskID = allTasks.length + 1;
-    taskStatus.toLowerCase();
+    taskStatus = taskStatus.toLowerCase();
 
     //loop will continue as long status is not equal to todo doing or done
     while(taskStatus != "todo" && taskStatus != "doing" && taskStatus != "done"){
@@ -46,8 +46,10 @@ function tasks(){
     allTasks.push(newTask);
     }
     const doneTasks = allTasks.filter(allTasks => allTasks.status === "done");
+    console.log("========== ALL TASKS ============");
     console.log("All tasks: ", allTasks);
+    console.log("========== COMPLETED TASKS ======");
     console.log("Completed tasks: ", doneTasks);
-
+    alert("There are enough tasks on your board, please check them in the console.");
 
 }
